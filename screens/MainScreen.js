@@ -106,7 +106,7 @@ function MainScreen() {
                 onChangeText={setAmount} 
                 keyboardType="numeric"/>
 
-            <View>
+            <View style={styles.aboutButton}>
                 <Button title="Convert" onPress={handleConvert} />
             </View>
             
@@ -128,21 +128,21 @@ function MainScreen() {
 const styles = StyleSheet.create({
     container: {
         flexGrow: 1,
-        padding: 16,
-        backgroundColor: "#aae5ecff"
+        padding: 20,
+        backgroundColor: "#93c6cfff"
     },
 
 
     label: {
-        marginTop: 12,
-        fontSize: 20,
-        marginBottom: 4,
+        marginTop: 30,
+        fontSize: 19,
+        marginBottom: 10,
         fontWeight: 'bold',
     },
 
     input: {
-        borderWidth: 1,
-        fontSize: 17,
+        borderWidth: 4,
+        fontSize: 20,
         borderColor: '#01660eff',
         padding: 8,
         borderRadius: 4,
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     },
 
     aboutButton: {
-        marginTop: 24,
+        marginTop: 30,
     }
 });
 
