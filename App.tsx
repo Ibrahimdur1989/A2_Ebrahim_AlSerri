@@ -26,8 +26,8 @@ function App(): React.JSX.Element {
             title: 'Currency Converter',
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontSize: 30,
-              fontWeight: 'bold',
+              fontSize: 35,
+              fontWeight: 'condensedBold',
             }}}/>
 
             {/* About Screen */}
