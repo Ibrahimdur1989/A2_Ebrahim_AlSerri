@@ -8,7 +8,7 @@ import {View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity} from
 import { useNavigation } from "@react-navigation/native";
 
 // FreeCurrencyAPI key
-const API_KEY = "fca_live_7RDNcPsdq5F62a3LR8K1FMCJPmaqpe18DMlz75KG";
+import {API_KEY} from "../constants";
 
 function MainScreen() {
     const navigation = useNavigation();
