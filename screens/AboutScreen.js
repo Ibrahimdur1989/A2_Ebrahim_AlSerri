@@ -21,7 +21,7 @@ function AboutScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 16,
+        padding: 20,
         backgroundColor: '#c4e9bdff'
     },
 
@@ -30,15 +30,16 @@ const styles = StyleSheet.create({
         marginBottom: 30,
         fontWeight: 'bold'
     },
-    section: {},
     
     text: {
         fontSize: 20,
-        marginBottom: 20
+        marginBottom: 20,
+        fontWeight: 'bold',
+        marginTop: 4,
     },
 
     description: {
-        marginTop: 12
+        marginTop: 80
     }
 });
 
