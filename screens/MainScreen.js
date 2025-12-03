@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {View, Text, TextInput, Button, StyleSheet, Alert} from 'react-native';
+import {View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity} from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 
 const API_KEY = "fca_live_7RDNcPsdq5F62a3LR8K1FMCJPmaqpe18DMlz75KG";
@@ -80,7 +80,7 @@ function MainScreen() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Currency Convert</Text>
+            
 
             <Text style={styles.label}>Base currency</Text>
             <TextInput 
@@ -106,7 +106,10 @@ function MainScreen() {
                 onChangeText={setAmount} 
                 keyboardType="numeric"/>
 
-            <Button title="Convert" onPress={handleConvert} />
+            <View>
+                <Button title="Convert" onPress={handleConvert} />
+            </View>
+            
 
             {result !== '' && (
                 <View style={styles.resultContainer}>
@@ -124,27 +127,27 @@ function MainScreen() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flexGrow: 1,
         padding: 16,
-        justifyContent: 'flex-start',
+        backgroundColor: "#aae5ecff"
     },
 
-    title: {
-        fontSize: 24,
-        marginBottom: 16,
-        fontWeight: 'bold',
-    },
 
     label: {
         marginTop: 12,
+        fontSize: 20,
         marginBottom: 4,
+        fontWeight: 'bold',
     },
 
     input: {
         borderWidth: 1,
-        borderColor: '#888',
+        fontSize: 17,
+        borderColor: '#01660eff',
         padding: 8,
         borderRadius: 4,
+        marginBottom: 15,
+        paddingHorizontal: 10,        
     },
 
     resultContainer: {
@@ -152,7 +155,7 @@ const styles = StyleSheet.create({
     },
 
     resultText: {
-        fontSize: 16,
+        fontSize: 20,
         marginBottom: 4,
     },
 

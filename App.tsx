@@ -15,7 +15,13 @@ function App(): React.JSX.Element {
         <Stack.Screen 
           name='Main' 
           component={MainScreen} 
-          options={{title: 'Currency Converter'}}/>
+          options={{
+            title: 'Currency Converter',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              fontSize: 30,
+              fontWeight: 'bold',
+            }}}/>
           <Stack.Screen 
           name='About' 
           component={AboutScreen} 
