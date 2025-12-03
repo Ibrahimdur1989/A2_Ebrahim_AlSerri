@@ -37,8 +37,8 @@ function App(): React.JSX.Element {
           options={{title: 'About',
             headerTitleAlign: 'center',
             headerTitleStyle: {
-              fontSize: 30,
-              fontWeight: 'bold',
+              fontSize: 45,
+              fontWeight: 'condensedBold',
             }}}/>
       </Stack.Navigator>
     </NavigationContainer>
