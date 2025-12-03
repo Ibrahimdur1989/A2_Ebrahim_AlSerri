@@ -17,6 +17,8 @@ function App(): React.JSX.Element {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Main">
+
+        {/* Main Screen */}
         <Stack.Screen 
           name='Main' 
           component={MainScreen} 
@@ -27,6 +29,8 @@ function App(): React.JSX.Element {
               fontSize: 30,
               fontWeight: 'bold',
             }}}/>
+
+            {/* About Screen */}
           <Stack.Screen 
           name='About' 
           component={AboutScreen} 
