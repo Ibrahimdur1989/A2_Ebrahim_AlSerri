@@ -1,4 +1,7 @@
+// React
 import React from "react";
+
+// React Native
 import { View, Text, StyleSheet } from "react-native";
 
 
