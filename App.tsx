@@ -25,7 +25,12 @@ function App(): React.JSX.Element {
           <Stack.Screen 
           name='About' 
           component={AboutScreen} 
-          options={{title: 'About'}}/>
+          options={{title: 'About',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              fontSize: 30,
+              fontWeight: 'bold',
+            }}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

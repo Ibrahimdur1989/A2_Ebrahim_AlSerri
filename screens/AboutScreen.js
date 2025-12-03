@@ -4,13 +4,13 @@ import { View, Text, StyleSheet } from "react-native";
 
 function AboutScreen() {
     return (
-        <View style={StyleSheet.container}>
-            <Text style={StyleSheet.title}>About This App</Text>
+        <View style={styles.container}>
+            <Text style={styles.title}>About This App</Text>
 
-            <Text style={StyleSheet.text}>Student Name: Ebrahim Al-Serri</Text>
-            <Text style={StyleSheet.text}>Student ID: 101085527</Text>
+            <Text style={styles.text}>Student Name: Ebrahim Al-Serri</Text>
+            <Text style={styles.text}>Student ID: 101085527</Text>
 
-            <Text style={[StyleSheet.text, StyleSheet.description]}>
+            <Text style={[styles.text, styles.description]}>
                 This application converts an amount from a base currency to 
                 a destination currency using live exchange rates from FreeCurrencyAPI.
             </Text>
@@ -22,18 +22,19 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 16,
-        justifyContent: 'flex-start'
+        backgroundColor: '#c4e9bdff'
     },
 
     title: {
         fontSize: 24,
-        marginBottom: 16,
+        marginBottom: 30,
         fontWeight: 'bold'
     },
+    section: {},
     
     text: {
-        fontSize: 16,
-        marginBottom: 8
+        fontSize: 20,
+        marginBottom: 20
     },
 
     description: {
