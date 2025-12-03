@@ -1,7 +1,13 @@
+// React
 import React, {useState} from "react";
+
+// React Native
 import {View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity} from 'react-native';
+
+// Navigation
 import { useNavigation } from "@react-navigation/native";
 
+// FreeCurrencyAPI key
 const API_KEY = "fca_live_7RDNcPsdq5F62a3LR8K1FMCJPmaqpe18DMlz75KG";
 
 function MainScreen() {
@@ -13,9 +19,11 @@ function MainScreen() {
     const [result, setResult] = useState('');
     const [rate, setRate] = useState('');
 
+    // Hanfle Convert Button press
     const handleConvert = async () => {
 
         try {
+            // Basic validation
             if (!baseCurrency || !targetCurrency || !amount) {
                 Alert.alert("Error", "Please fill in all fields.");
                 return;
