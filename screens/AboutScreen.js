@@ -10,12 +10,16 @@ function AboutScreen() {
         <View style={styles.container}>
             <Text style={styles.title}>About This App</Text>
 
-            <Text style={styles.text}>Student Name: Ebrahim Al-Serri</Text>
-            <Text style={styles.text}>Student ID: 101085527</Text>
+            <Text style={styles.text}>Currency Converter Mobile Application</Text>
+
 
             <Text style={[styles.text, styles.description]}>
-                This application converts an amount from a base currency to 
-                a destination currency using live exchange rates from FreeCurrencyAPI.
+                This application allows users to convert an amount from a base currency to
+                a destination currency using live exchange rates provided by FreeCurrencyAPI.
+            </Text>
+
+            <Text style={styles.footer}>
+                Developed by Ebrahim Al-Serri
             </Text>
         </View>
     );
@@ -43,6 +47,14 @@ const styles = StyleSheet.create({
 
     description: {
         marginTop: 80
+    },
+
+    footer: {
+        fontSize: 14,
+        color: "#555",
+        textAlign: "center",
+        marginTop: "auto",
+        paddingBottom: 10,
     }
 });
 
